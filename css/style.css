@@ -4,23 +4,22 @@
   padding: 0;
 }
 
+
+
 body {
+  background-color: pink;
   height: 100vh;
-  width: 100%;
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
   padding:0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-nav {
-  background-color: grey;
-  height: 50px;
-  width: 100%;
-}
 
 main {
   background-color: green;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   position: relative;
 }
 
@@ -31,10 +30,6 @@ main {
   clear:both;
 }
 
-.container {
-  width: 1000px;
-  margin: auto;
-}
 
 .container-logo {
   height: 150px;
@@ -45,20 +40,53 @@ main {
   text-align: center;
 }
 
-img {
+.container-logo img {
   height: 150px;
+}
+
+.container-logo h1 {
+ font-size: 20px;
+ color: white;
+ text-transform: uppercase;
 }
 
 .header-top{
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 300px;
+  border: 6px solid white;
   background-image: url(../img/natural-header.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  top:0;
-  left: 0;
 }
+
+nav {
+  background-color: grey;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+.header-bottom {
+  height: 50px;
+  line-height: 50px;
+}
+.header-bottom nav ul {
+  list-style: none;
+  line-height: 50px;
+}
+
+.header-bottom nav ul li {
+  display: inline-block;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+.header-bottom nav ul li a {
+  display: inline-block;
+  padding-left: 0 5px;
+}
+
 
 .float-left {
   float: left;
@@ -90,10 +118,4 @@ img {
   margin-bottom:5%;
   border-radius: 5px;
   background-color: red;
-}
-
-.social {
-  width: 100%;
-  height: 100px;
-  background-color: purple;
 }
